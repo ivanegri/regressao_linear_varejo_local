@@ -80,7 +80,8 @@ import matplotlib.pyplot as plt
 bins = np.quantile(y_test, [0, 0.25, 0.5, 0.75, 1])
 colors = np.digitize(y_test, bins)
 import matplotlib.pyplot as plt
-plt.scatter(y_test, y_pred , alpha=0.5, c=colors,cmap='rainbow')
+plt.scatter(y_test, y_pred , alpha=1, color='blue')
+plt.scatter(y_test, y_test , alpha=0.5, color='red')
 plt.xlabel("Valores Reais")
 plt.ylabel("Valores Previstos")
 plt.title("Comparação entre Valores Reais e Previstos")
