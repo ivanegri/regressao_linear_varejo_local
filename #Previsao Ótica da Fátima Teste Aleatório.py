@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import calendar as cal
 # Carregar dados
-data = pd.read_csv('C:/Users/ivanl/OneDrive/Área de Trabalho/Loja/Valor por Data.csv', sep=';')
+data = pd.read_csv('/Valor por Data.csv', sep=';')
 data = data.dropna()
 
 # Converter tipos
